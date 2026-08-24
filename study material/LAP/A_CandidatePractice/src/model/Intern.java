@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package model;
+
+/**
+ *
+ * @author Trung Anh
+ */
+public class Intern extends Candidate {
+
+    private String majors;
+    private String semester;
+    private String universityName;
+
+    public Intern() {
+    }
+
+    public Intern(String majors, String semester, String universityName, int candidateId, String firstName, String lastName, int birthDate, String address, String phone, String email, int candidateType) {
+        super(candidateId, firstName, lastName, birthDate, address, phone, email, candidateType);
+        this.majors = majors;
+        this.semester = semester;
+        this.universityName = universityName;
+    }
+
+    public String getMajors() {
+        return majors;
+    }
+
+    public String getSemester() {
+        return semester;
+    }
+
+    public String getUniversityName() {
+        return universityName;
+    }
+}
